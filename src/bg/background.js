@@ -1,5 +1,6 @@
+
 chrome.storage.local.get('servers', function(val) {
-		if(!val) {
+		if(!val.servers) {
 			chrome.storage.local.set({'servers': ['Radius', 'Segment', 'Pi', 'Origin', 'Sphere', 'Centra', 'Arc', 'Orbit', 'Chord', 'Diameter', 'Maptest2', 'Tangent']
 		    }, function() {
 			  console.log('Initialized.');
@@ -8,7 +9,7 @@ chrome.storage.local.get('servers', function(val) {
 	})
 
 chrome.storage.local.get('groups', function(val) {
-		if(!val) {
+		if(!val.groups) {
 			chrome.storage.local.set({'groups': true
 		    }, function() {
 			  console.log('Initialized.');

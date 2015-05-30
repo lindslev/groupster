@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "description": "make private tagpro groups for any server from anywhere on chrome; by Gem",
+  "description": "make private  groups or hop in the joiner for any tagpro server from anywhere on chrome; by Gem",
   "homepage_url": "http://tagpro.gg",
   "icons": {
     "16": "icons/groupster_icon2.png",

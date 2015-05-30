@@ -1,6 +1,7 @@
 /* browser-action script */
 
 var currentPage = chrome.extension.getBackgroundPage();
+
 currentPage.getServers();
 currentPage.joinerOrGroup();
 

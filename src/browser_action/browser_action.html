@@ -26,7 +26,7 @@
 	}
 	#private, #joiner {
 		font-size: 10px;
-		background: white;
+		color: black;
 	}
 	button {
 		cursor: pointer;
@@ -34,10 +34,10 @@
 		padding: 5px;
 	}
 	.on {
-		color: green;
+		background: white;
 	}
 	.off {
-		color: red;
+		background: #999999;
 	}
 	#settings p {
 		width: 50%;
@@ -48,7 +48,7 @@
 		margin-left: 10px;
 	}
 	.preferred {
-		font-size: 8px;
+		font-size: 11px;
 		color: white;
 	}
 	#preferred {
@@ -78,7 +78,7 @@
 				<button ng-click="addServer(server)">+</button>
 				<button ng-click="removeServer(server)">x</button>
 			</div>
-			<button ng-click="toggleView()">close settings</button>
+			<button ng-click="toggleView()">save & close settings</button>
 		</div>
 	</div>
 </body>
