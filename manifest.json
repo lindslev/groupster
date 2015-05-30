@@ -1,0 +1,44 @@
+{
+  "name": "Groupster",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "description": "make private tagpro groups for any server from anywhere on chrome; by Gem",
+  "homepage_url": "http://tagpro.gg",
+  "icons": {
+    "16": "icons/groupster_icon2.png",
+    "48": "icons/groupster_icon2.png",
+    "128": "icons/groupster_icon.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/groupster_icon.png",
+    "default_title": "browser action demo",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+   "externally_connectable": {
+    "matches": ["http://serene-headland-9707.herokuapp.com/*"
+              ]
+  },
+  "permissions": [
+    "cookies",
+    "notifications",
+    "tabs",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}

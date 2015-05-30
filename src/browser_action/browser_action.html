@@ -1,0 +1,34 @@
+<!doctype html>
+<style type="text/css">
+	body {
+		width: 150px;
+		font-family: monospace;
+		text-align: center;
+		background: black;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 { color: white; }
+	ul {
+		list-style-type: none;
+	}
+	p {
+		cursor: pointer;
+		font-size: 15px;
+		padding: 5px;
+		background: #ACE600;
+		border: solid 3px #608100;
+	}
+</style>
+
+<script src="/js/jquery/jquery.js"></script>
+<script src="/js/angular/angular.js"></script>
+<script src="browser_action.js"></script>
+
+<body ng-app="groupster">
+	<h2> click a server to create a private group there </h3>
+	<div ng-controller="HomeCtrl">
+		<p ng-repeat="server in servers" ng-click="makeGroupOn(server)">{{server}}</p>
+	</div>
+</body>
